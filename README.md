@@ -1,5 +1,10 @@
 # Task Graph Engine · ПРОПАГАТОР
 
+[![ci](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml/badge.svg)](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml)
+![license](https://img.shields.io/badge/license-Apache--2.0-blue)
+![deps](https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen)
+![version](https://img.shields.io/badge/version-1.1.0-orange)
+
 **Один алгоритм — все функции структуры графа задач.**
 Ядро — пропагатор (функция Грина на графе):
 
@@ -45,6 +50,41 @@ K(v) = ν_v( φ(v) ⊕ Σ_{u→v} ε_uv(K(u)) )      — в полукольце
   готовый градиент ∂T/∂d.
 - **Крэшинг-контур**: ПРОПАГАТОР → градиент → сжатие → ПРОПАГАТОР до дедлайна;
   тупик жадного хода = нелокальность (нужно одновременное сжатие пары ветвей).
+
+## Мировые практики, на которых стоит ядро (срез 2026-11-04)
+
+- **GraphBLAS** (forum с 2013; C API v2.1.0 — финальный стандарт 22.12.2023;
+  SuiteSparse:GraphBLAS, LAGraph, python-graphblas — «task graph» там канонический
+  пример графа): идея «алгоритм графа = линейная алгебра в полукольце».
+  Здесь — та же алгебра без матричного аппарата: разреженный матвек по слоям Кана
+  эквивалентен проходке `sweep`.
+- **Mohri (2002)**, «Semiring frameworks and algorithms for shortest-distance
+  problems»: расстояния до фикспойнта в произвольном полукольце — один итерационный
+  жанр (в доме — `pathsum` для циклов).
+- **Radul & Sussman (2009)**, «The Art of the Propagator» (MIT CSAIL) и практический
+  наследник ekmett/propagators (Haskell): ячейки с merge и покоем — тот же
+  фикспойнт в инкрементальном жанре.
+- **Клейни-алгебры и замыкание всех пар** (Höfner–Möller, Kleene algebra with
+  tests): Флойд-Уоршалл в произвольном полукольце — один алгоритм на все пары.
+- **CPM-практика 2026** (Asana «Critical path method 2026», PMI «Crash with
+  confidence»): longest path, float/slack, schedule compression по cost slope —
+  здесь это не отдельно, а следствия одного ядра (K⁺/K⁻/резерв/крэшинг-контур).
+
+Ни одна из них не нужна как зависимость: всё — собственный труд на stdlib,
+идеи приняты зерном (провенанс дома: «здесь нет ни байта чужого»).
+
+## Место в экосистеме дома
+
+- `commons` (rtynbirf/commons) — организм; пакет `commons/taskgraph/`
+  (SPEC-0011, ADR-0018 «Единый пропагатор — исполняемая математика плана
+  организма») — расширенное тело этого ядра: три жанра проходки (Кан/matvec/ячейки),
+  `pathsum`, замыкание всех пар, приёмки-эквивалентности в CI.
+- `ruvson-lyrics` (приватный дом) — корпус 65 треков RUVSON как граф задач:
+  `engine/house_graph.py` строит DAG из факта репо (392 вершины, 584 ребра) и
+  отвечает числом: T = 7ч36м, критический путь — все 65 сверок подряд, узкое
+  место — ухо юзера (технология его не сжимает).
+- Этот репозиторий — автономное ядро с самоверификацией: контракт для
+  мультиагентной среды, от которого растут оба интегрирования.
 
 ## Быстрый старт
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0] — 2026-11-04 (чистовик)
+
+### Fixed
+- CI: повреждённая строка фильтра веток (`branches: ain]` → `branches: [main]`) — workflow не запускался бы.
+- pytest-секция pyproject указывала на несуществующую папку tests — убрана (ядро самоверифицируется прогонами, CI это и гоняет).
+
+### Changed
+- Лицензия MIT → Apache-2.0: консистентность с домом (commons, REUSE-практика; вклад в экосистему идёт под одной лицензией).
+- README: раздел «Мировые практики (срез 2026-11-04)» с проверенными источниками (GraphBLAS C API v2.1.0, Mohri 2002, Radul/Sussman 2009, ekmett/propagators, Höfner–Möller, CPM-2026) и раздел «Место в экосистеме дома» (commons SPEC-0011/ADR-0018, ruvson-lyrics engine).
+
 ## [1.0.0] — 2026-11-04
 
 ### Added

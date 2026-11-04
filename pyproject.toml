@@ -1,6 +1,6 @@
 [project]
 name = "task-graph-propagator"
-version = "1.0.0"
+version = "1.1.0"
 description = "Один алгоритм — все функции структуры графа задач: пропагатор K(v)=ν(φ⊕Σε(K(u))) в полукольце"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -12,5 +12,3 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
