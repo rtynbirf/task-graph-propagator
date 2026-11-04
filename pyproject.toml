@@ -1,0 +1,16 @@
+[project]
+name = "task-graph-propagator"
+version = "1.0.0"
+description = "Один алгоритм — все функции структуры графа задач: пропагатор K(v)=ν(φ⊕Σε(K(u))) в полукольце"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rtynbirf" }]
+keywords = ["task-graph", "propagator", "semiring", "critical-path", "scheduling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
