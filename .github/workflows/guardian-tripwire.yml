@@ -37,8 +37,7 @@ jobs:
           echo "история целая (forced=$FORCED, ref=$REF)"
 
       - name: Checkout (полная история)
-        uses: actions/checkout@v7
-        with:
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7with:
           fetch-depth: 0
 
       - name: Скан пуша на секреты
@@ -61,8 +60,7 @@ jobs:
       - name: ALARM — открыть issue
         if: failure()
         continue-on-error: true
-        uses: actions/github-script@v9
-        with:
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9with:
           script: |
             const kind = '${{ github.event.forced }}' === 'true' ? 'FORCE-PUSH' : 'СЕКРЕТ В ПУШЕ';
             await github.rest.issues.create({
