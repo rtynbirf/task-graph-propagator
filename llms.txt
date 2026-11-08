@@ -1,0 +1,40 @@
+# task-graph-propagator
+> Task Graph Engine: один пропагатор — все функции структуры графа задач (полукольца, Кана, критпуть, резервы, надёжность, крэшинг)
+
+Автоген 2026-11-08 · источник: живой GitHub API (номера и файлы не руками) · владелец rtynbirf · ветка `main`
+
+## Мембрана
+- README.md — для человека (Task Graph Engine · ПРОПАГАТОР)
+- AGENTS.md — есть
+- LICENSE — Apache-2.0
+- topics: dependency-graph, engine, graph, library, propagation, python, research-verification, task-graph
+
+## Карта корня
+- .github/
+- .gitignore
+- AGENTS.md
+- CHANGELOG.md
+- CODEOWNERS
+- CONTRIBUTING.md
+- LICENSE
+- Makefile
+- PULSE.md
+- README.md
+- SECURITY.md
+- propagator_engine.py
+- propagator_engine_part2.py
+- push.sh
+- pyproject.toml
+
+## Метаболизм (make)
+- make test
+
+## CI
+- workflow: ci
+- workflow: guardian-tripwire
+- workflow: self-audit
+
+## Ссылки
+- [GitHub](https://github.com/rtynbirf/task-graph-propagator)
+- [README](https://github.com/rtynbirf/task-graph-propagator/blob/main/README.md)
+- [raw llms.txt](https://raw.githubusercontent.com/rtynbirf/task-graph-propagator/main/llms.txt)
