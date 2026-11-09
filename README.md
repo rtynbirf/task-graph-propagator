@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="banner.png" alt="task-graph-propagator — Один пропагатор — все функции структуры графа" width="100%">
+</div>
+
 # Task Graph Engine · ПРОПАГАТОР
 
 [![ci](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml/badge.svg)](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml)
