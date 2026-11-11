@@ -2,6 +2,15 @@
   <img src="banner.png" alt="task-graph-propagator — Один пропагатор — все функции структуры графа" width="100%">
 </div>
 
+<!--ФОРЖ:МУЗА:НАЧАЛО-->
+<div align="center">
+  <img src="repo-muse.svg" width="100%" alt="Муза task-graph-propagator: картина кузни ПОЛИМАТ, раунд 9" />
+  <br/>
+  <img src="forge-divider.svg" width="62%" alt="разделитель кузни ПОЛИМАТ" />
+</div>
+<!--ФОРЖ:МУЗА:КОНЕЦ-->
+
+
 # Task Graph Engine · ПРОПАГАТОР
 
 [![ci](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml/badge.svg)](https://github.com/rtynbirf/task-graph-propagator/actions/workflows/ci.yml)
@@ -135,3 +144,10 @@ sweep(G, phi, semiring, eps=None, nu=None) -> (K, pred, order, cycles)
 - `propagator_engine_part2.py` — часть 2 («дожим»): универсальность, статсумма, контур управления
 - `test_propagator_properties.py` — property-тесты пропагатора (П53, seed 20261109)
 - `push.sh` — пуш в GitHub: токен берётся из окружения, в код и конфиг не попадает
+
+<!--ФОРЖ:ПОДВАЛ-->
+---
+
+<div align="center">
+  <sub>◆ картина и штандарт — ручная ковка <a href="https://github.com/rtynbirf">КУЗНИ ПОЛИМАТ</a> · ЧЕЛОВЕК=АККАУНТ=PID1 ◆</sub>
+</div>
