@@ -1,24 +1,38 @@
 <div align="center">
-  <img src="banner.png" alt="task-graph-propagator — Один пропагатор — все функции структуры графа" width="100%">
+
+<a href="https://github.com/rtynbirf/task-graph-propagator"><img src="banner.png" width="100%" alt="task-graph-propagator — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
 <div align="center">
-  <img src="repo-muse.svg" width="100%" alt="Муза task-graph-propagator: мастерская ДРЕВО ЗАДАЧ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/task-graph-propagator@main/repo-muse.svg" width="100%" alt="Муза task-graph-propagator: мастерская ДРЕВО ЗАДАЧ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
   <br/>
-  <img src="forge-divider.svg" width="62%" alt="делитель мастерской ДРЕВО ЗАДАЧ" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/task-graph-propagator@main/forge-divider.svg" width="62%" alt="делитель мастерской ДРЕВО ЗАДАЧ" />
 </div>
 <!--ФОРЖ:МУЗА:КОНЕЦ-->
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы task-graph-propagator: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы task-graph-propagator №55 в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
 |---:|---:|---:|---|---:|
-| 32 | 2 | 44 | 2026-11-18 | 1 |
+| 42 | 4 | 1 | 2026-11-28 | 1 |
 <!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
+# task-graph-propagator
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/task-graph-propagator@main/.github/social-preview.png" alt="task-graph-propagator" width="100%"></p>
+
+<div align="center">
+  <img src="banner.png" alt="task-graph-propagator — Один пропагатор — все функции структуры графа" width="100%">
+</div>
+
+
+
+
 
 
 
