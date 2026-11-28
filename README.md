@@ -24,6 +24,18 @@
 
 # task-graph-propagator
 
+<div align="center">
+
+<a href="https://github.com/rtynbirf/task-graph-propagator"><img src="banner.png" width="100%" alt="task-graph-propagator — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+
+
+
+
+# task-graph-propagator
+
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/task-graph-propagator@main/.github/social-preview.png" alt="task-graph-propagator" width="100%"></p>
 
 <div align="center">
